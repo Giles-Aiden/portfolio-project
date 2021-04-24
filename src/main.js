@@ -16,10 +16,16 @@ import DeferredContent from "primevue/deferredcontent";
 import PrimeVue from "primevue/config";
 import Button from "primevue/button";
 import Dialog from "primevue/dialog";
+import Card from "primevue/card";
 app.use(PrimeVue, { ripple: true });
 app.component("Button", Button);
 app.component("Dialog", Dialog);
 app.component("DeferredContent", DeferredContent);
 app.component("Divider", Divider);
+app.component("Card", Card);
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+app.AOS = new AOS.init();
 
 app.mount("#app");
